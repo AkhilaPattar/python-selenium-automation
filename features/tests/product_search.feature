@@ -3,6 +3,6 @@ Feature: Test Scenarios for Search functionality
 
   Scenario: User can search for a product
     Given Open Google page
-    When Input watches into search field
+    When Input Home Appliances into search field
     And Click on search icon
-    Then Product results for watches are shown
+    Then Product results for Home Appliances are shown
