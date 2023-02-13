@@ -12,12 +12,10 @@ driver.find_element(By.ID, 'nav-orders').click()
 expected_result='Sign in'
 actual_result= driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
 
-sleep(5)
-
 print(actual_result)
 
 assert expected_result == actual_result, f'Expected {expected_result} but got actual {actual_result}'
-assert driver.find_element(By.ID, 'ap_email')
+assert driver.find_element(By.ID, 'ap_email').is_displayed(), 'Email field not shown'
 
 print('Test case passed')
 
