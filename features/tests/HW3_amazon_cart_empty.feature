@@ -6,3 +6,5 @@ Feature: Test scenario for your amazon cart is empty when user click on cart
     Given open amazon page
     When click on cart
     Then verify that text Your Amazon Cart is empty shown
+
+
