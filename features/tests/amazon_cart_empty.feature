@@ -1,6 +1,8 @@
 # Created by rkshe at 2/20/2023
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Test scenario for your amazon cart is empty when user click on cart
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+
+  Scenario: user sees text Your Amazon Cart is empty when clicked on Cart
+    Given open amazon page
+    When click on cart
+    Then verify that text Your Amazon Cart is empty shown
